@@ -1,6 +1,6 @@
 import { Box, Text } from "@chakra-ui/react";
 
-const Footer: React.FC = () => {
+const Footer = () => {
   return (
     <Box
       bg="purple.50"

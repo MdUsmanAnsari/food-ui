@@ -1,9 +1,7 @@
 import { Box, Button, Text, Heading, Container, Img } from "@chakra-ui/react";
 import BgImg from "../Resources/hero.jpg";
 
-const HeroSection: React.FC = () => {
-  console.log(BgImg.toString());
-
+const HeroSection = () => {
   const imagePth = "." + BgImg;
 
   return (

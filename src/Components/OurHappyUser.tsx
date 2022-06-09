@@ -13,30 +13,38 @@ import { MdOutlineArrowForward } from "react-icons/md";
 
 import image from "../Resources/customer-1.jpg";
 
-const OurHappyUser: React.FC = () => {
+const OurHappyUser = () => {
   return (
     <Box bg="purple.50" py={24}>
       <Container maxW="container.lg">
         <Box textAlign="center" mb={10}>
           <Box textAlign="center" maxW="xl" display="inline-block" mb={20}>
-            <Text mb={0} fontSize="lg" fontWeight={600} color="gray.600">
+            <Text
+              mb={0}
+              fontSize={{ base: "md", md: "2xl", lg: "4xl" }}
+              fontWeight={600}
+              color="gray.600"
+            >
               MEET
             </Text>
-            <Heading fontSize="6xl" mb={6}>
+            <Heading fontSize={{ base: "2xl", md: "4xl", lg: "6xl" }} mb={6}>
               Our Happy Users
             </Heading>
-            <Text color="gray.500">
+            <Text
+              color="gray.500"
+              fontSize={{ base: "base", md: "md", lg: "xl" }}
+            >
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus
               dolorem ea sunt ipsa culpa nostrum eum, temporibus reiciendis
               magni placeat porro unde.
             </Text>
           </Box>
         </Box>
-        <Grid templateColumns="min-content 1fr" gap={16}>
+        <Grid templateColumns={{ md: "1fr", lg: "min-content 1fr" }} gap={16}>
           <GridItem
             role="group"
             overflow="hidden"
-            width="22rem"
+            width={{ lg: "22rem" }}
             height="28rem"
             backgroundColor="pink.50"
             borderRadius={4}
@@ -49,6 +57,7 @@ const OurHappyUser: React.FC = () => {
                 transform: "scale(1.1)",
               }}
               src={image}
+              objectPosition="top"
               objectFit="cover"
             />
           </GridItem>

@@ -9,19 +9,23 @@ import {
   Button,
 } from "@chakra-ui/react";
 
-const Contact: React.FC = () => {
+const Contact = () => {
   return (
     <Box py={24}>
-      0
       <Container
         maxW="container.md"
         backgroundColor="pink.100"
-        p={16}
+        p={{ base: 10, md: 16 }}
         borderRadius={4}
         position="relative"
         zIndex={1}
       >
-        <Heading textAlign="center" color="gray.900" mb={12}>
+        <Heading
+          textAlign="center"
+          color="gray.900"
+          mb={12}
+          fontSize={{ base: 16, md: 24 }}
+        >
           Contact Us For More Queries!!
         </Heading>
         <FormControl>

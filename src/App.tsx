@@ -6,7 +6,7 @@ import Navigation from "./Components/Navigation";
 import OurHappyUser from "./Components/OurHappyUser";
 import OurSpecialties from "./Components/OurSpecialties";
 
-const App: React.FC = () => {
+const App = () => {
   return (
     <React.Fragment>
       <Navigation />

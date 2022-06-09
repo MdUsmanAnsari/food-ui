@@ -1,6 +1,6 @@
 import { Box, Flex, List, ListItem, Link, Container } from "@chakra-ui/react";
 
-const Navigation: React.FC = () => {
+const Navigation = () => {
   return (
     <Box
       px={12}
